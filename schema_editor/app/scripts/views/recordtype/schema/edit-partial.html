@@ -2,12 +2,15 @@
     <div class="col-sm-8 col-sm-offset-3">
         <div class="form-area-heading">
             <h2>People</h2>
-            <button type="button" class="btn btn-default">Add a field</button>
+            <button type="button" ng-click="rtSchemaEdit.onEditorAddClicked()" class="btn btn-default">Add a field</button>
             <div class="content-border"></div>
         </div>
-        <div class="form-area-body">
+        <json-editor editor-id="{{ rtSchemaEdit.editor.id }}"
+                     options="rtSchemaEdit.editor.options"
+                     class="form-area-body">
+        </json-editor>
 
-            <!-- FIRST NAME -->
+<!--
             <div class="row">
                 <div class="field">
                     <h4>First Name</h4>
@@ -28,7 +31,7 @@
                     </a>
                 </div>
             </div>
-            <section class="form-collapse">
+            <section class="form-collapse active">
                 <div class="row field-type-options">
                     <div class="col-sm-8">
                         <label for="image" class="control-label">Field Title</label>
@@ -71,7 +74,6 @@
                 </div>
             </section>
 
-            <!-- FAMILY NAME -->
             <div class="row">
                 <div class="field">
                     <h4>Family Name</h4>
@@ -135,7 +137,6 @@
                 </div>
             </section>
 
-            <!-- INVOLVEMENT -->
             <div class="row">
                 <div class="field">
                     <h4>Involvement</h4>
@@ -156,7 +157,7 @@
                     </a>
                 </div>
             </div>
-            <section class="form-collapse">
+            <section class="form-collapse active">
                 <div class="row field-type-options">
                     <div class="col-sm-8">
                         <label for="image" class="control-label">Field Title</label>
@@ -197,7 +198,6 @@
                 </div>
             </section>
 
-            <!-- IMAGE -->
             <div class="row">
                 <div class="field">
                     <h4>Image</h4>
@@ -218,7 +218,7 @@
                     </a>
                 </div>
             </div>
-            <section class="form-collapse">
+            <section class="form-collapse active">
                 <div class="row field-type-options">
                     <div class="col-sm-8">
                         <label for="image" class="control-label">Field Title</label>
@@ -254,7 +254,6 @@
                 </div>
             </section>
 
-            <!-- VEHICLE -->
             <div class="row">
                 <div class="field">
                     <h4>Vehicle</h4>
@@ -275,7 +274,7 @@
                     </a>
                 </div>
             </div>
-            <section class="form-collapse">
+            <section class="form-collapse active">
                 <div class="row field-type-options">
                     <div class="col-sm-8">
                         <label for="image" class="control-label">Field Title</label>
@@ -339,5 +338,6 @@
                 <button type="button" class="btn btn-default">Cancel</button>
             </div>
         </div>
+-->
     </div>
 </div>

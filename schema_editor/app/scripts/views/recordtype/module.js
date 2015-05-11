@@ -43,6 +43,7 @@
 
     angular.module('ase.views.recordtype', [
         'ui.router',
+        'json-editor'
     ]).config(StateConfig);
 
 })();
