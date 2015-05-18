@@ -134,6 +134,11 @@
                         type: 'string',
                         title: 'Field Title',
                     },
+                    fieldOptions: {
+                        title: 'Field Options',
+                        type: 'string',
+                        format: 'textarea'
+                    },
                     isRequired: {
                         type: 'boolean',
                         format: 'checkbox',
@@ -145,11 +150,15 @@
                         title: 'Filterable/Searchable'
                     },
                     displayType: {
-                        type: 'string',
-                        enum: [
-                            'select',
-                            'checkbox'
-                        ]
+                        type: 'array',
+                        format: 'checkbox',
+                        items: {
+                            type: 'string',
+                            enum: [
+                                'select',
+                                'checkbox'
+                            ]
+                        }
                     }
                 },
                 options: {
